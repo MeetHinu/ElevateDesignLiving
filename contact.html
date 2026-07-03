@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Elevate Living Design</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">Elevate <em>Living</em> Design</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Book a Consultation</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Tell us about your room.</h1>
+    <p>Fill in a few details and we'll get back to you within two business days to arrange a consultation.</p>
+  </div>
+</header>
+
+<section class="section-light">
+  <div class="wrap grid-2">
+    <div>
+      <form id="consult-form">
+        <div class="form-row">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div>
+            <label for="project">Project Type</label>
+            <select id="project" name="project">
+              <option>Kitchen Renovation</option>
+              <option>Bathroom Renovation</option>
+              <option>Kitchen &amp; Bathroom</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="message">Tell us about your space</label>
+          <textarea id="message" name="message" placeholder="Room size, current condition, timeline, anything else that helps us prepare."></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Request Consultation</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <div class="swatch swatch-limestone" style="height:100%;min-height:300px;"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap grid-3">
+    <div>
+      <p class="eyebrow">Studio</p>
+      <h3 style="font-size:20px;margin-top:10px;">Visit Us</h3>
+      <p style="margin-top:10px;color:var(--text-dark-dim);font-size:14px;">123 Gertrude Street<br>Fitzroy VIC 3065<br>Australia</p>
+    </div>
+    <div>
+      <p class="eyebrow">Reach Out</p>
+      <h3 style="font-size:20px;margin-top:10px;">Get in Touch</h3>
+      <p style="margin-top:10px;color:var(--text-dark-dim);font-size:14px;">
+        <a href="mailto:studio@elevatelivingdesign.com">studio@elevatelivingdesign.com</a><br>
+        <a href="tel:+61300000000">+61 3 0000 0000</a>
+      </p>
+    </div>
+    <div>
+      <p class="eyebrow">Hours</p>
+      <h3 style="font-size:20px;margin-top:10px;">Studio Hours</h3>
+      <p style="margin-top:10px;color:var(--text-dark-dim);font-size:14px;">Monday – Friday: 9am – 5:30pm<br>Saturday: By appointment</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="footer-logo">Elevate <em>Living</em> Design</p>
+        <p style="margin-top:14px;max-width:280px;">Kitchen and bathroom interior design, from concept to build oversight.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <p>123 Gertrude Street<br>Fitzroy VIC 3065</p>
+          <a href="mailto:studio@elevatelivingdesign.com">studio@elevatelivingdesign.com</a>
+          <a href="tel:+61300000000">+61 3 0000 0000</a>
+          <a href="https://instagram.com/elevateliving.design" target="_blank" rel="noopener">@elevateliving.design</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Elevate Living Design. All rights reserved.</span>
+      <span>Melbourne, Australia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Elevate Living Design</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .filter-bar{display:flex;gap:12px;margin-bottom:44px;flex-wrap:wrap;}
+  .filter-btn{
+    padding:10px 20px;font-size:13px;font-weight:600;letter-spacing:0.03em;
+    border:1px solid var(--line-on-light);background:transparent;color:var(--text-dark-dim);
+    border-radius:2px;cursor:pointer;
+  }
+  .filter-btn.active-filter{background:var(--bg-primary);color:var(--text-light);border-color:var(--bg-primary);}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">Elevate <em>Living</em> Design</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Book a Consultation</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Kitchens and bathrooms we've completed.</h1>
+    <p>Each project below was designed and overseen from first sketch to final finish.</p>
+  </div>
+</header>
+
+<section class="section-light">
+  <div class="wrap">
+    <div class="filter-bar">
+      <button class="filter-btn active-filter" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+      <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+    </div>
+
+    <div class="grid-3">
+      <div class="card project-card" data-category="kitchen">
+        <div class="thumb swatch swatch-marble"></div>
+        <div class="body">
+          <p class="tag">Kitchen</p>
+          <h3>Fitzroy Terrace Kitchen</h3>
+          <p class="loc">Fitzroy, Melbourne — Calacatta marble &amp; blackened steel</p>
+        </div>
+      </div>
+      <div class="card project-card" data-category="bathroom">
+        <div class="thumb swatch swatch-verdigris"></div>
+        <div class="body">
+          <p class="tag">Bathroom</p>
+          <h3>Toorak Ensuite</h3>
+          <p class="loc">Toorak, Melbourne — Verdigris brass &amp; honed limestone</p>
+        </div>
+      </div>
+      <div class="card project-card" data-category="kitchen">
+        <div class="thumb swatch swatch-walnut"></div>
+        <div class="body">
+          <p class="tag">Kitchen</p>
+          <h3>Brighton Coastal Kitchen</h3>
+          <p class="loc">Brighton, Melbourne — Smoked walnut joinery</p>
+        </div>
+      </div>
+      <div class="card project-card" data-category="bathroom">
+        <div class="thumb swatch swatch-limestone"></div>
+        <div class="body">
+          <p class="tag">Bathroom</p>
+          <h3>Armadale Powder Room</h3>
+          <p class="loc">Armadale, Melbourne — Limestone &amp; brushed brass</p>
+        </div>
+      </div>
+      <div class="card project-card" data-category="kitchen">
+        <div class="thumb swatch swatch-brass"></div>
+        <div class="body">
+          <p class="tag">Kitchen</p>
+          <h3>Hawthorn Family Kitchen</h3>
+          <p class="loc">Hawthorn, Melbourne — Brass hardware &amp; oak</p>
+        </div>
+      </div>
+      <div class="card project-card" data-category="bathroom">
+        <div class="thumb swatch swatch-ink"></div>
+        <div class="body">
+          <p class="tag">Bathroom</p>
+          <h3>South Yarra Wet Room</h3>
+          <p class="loc">South Yarra, Melbourne — Matte ink steel &amp; stone</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>See something close to your vision?</h2>
+    <p>We'd love to talk about what a similar approach could look like in your space.</p>
+    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="footer-logo">Elevate <em>Living</em> Design</p>
+        <p style="margin-top:14px;max-width:280px;">Kitchen and bathroom interior design, from concept to build oversight.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <p>123 Gertrude Street<br>Fitzroy VIC 3065</p>
+          <a href="mailto:studio@elevatelivingdesign.com">studio@elevatelivingdesign.com</a>
+          <a href="tel:+61300000000">+61 3 0000 0000</a>
+          <a href="https://instagram.com/elevateliving.design" target="_blank" rel="noopener">@elevateliving.design</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Elevate Living Design. All rights reserved.</span>
+      <span>Melbourne, Australia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
